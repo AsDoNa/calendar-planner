@@ -62,6 +62,18 @@ export default function Navbar(props) {
                 <ListItemText primary={"Calendar #1"} />
               </ListItemButton>
             </ListItem>
+            <ListItem key={2} disablePadding>
+              <ListItemButton
+                component={Link}
+                to="/calendar2"
+                selected={"/calendar2" === path}
+              >
+                <ListItemIcon>
+                  <CalendarMonthIcon />
+                </ListItemIcon>
+                <ListItemText primary={"Calendar #2"} />
+              </ListItemButton>
+            </ListItem>
           </List>
         </Box>
       </Drawer>
